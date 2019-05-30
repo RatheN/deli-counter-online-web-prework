@@ -17,7 +17,18 @@ def take_a_number(katz_deli, name)
   katz_deli.push(name)
   place = katz_deli.index(name) + 1
   puts "Welcome, #{name}. You are number #{place} in line."
+end
+
+def now_serving(katz_deli)
+  next = katz_deli(0)
+  if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{next}."
+    katz_deli.delete(0)
+  end
 
 
 
 end
+    
