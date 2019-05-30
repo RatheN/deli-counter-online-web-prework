@@ -11,8 +11,6 @@ def line(katz_deli)
   end
 end
 
-
-
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
   place = katz_deli.index(name) + 1
@@ -20,8 +18,6 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-
-
   if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   else
