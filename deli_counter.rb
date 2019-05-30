@@ -20,15 +20,13 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  first = katz_deli(0)
 
-  if first.empty?
+
+  if katz_deli.empty?
     puts "There is nobody waiting to be served!"
   else
+    first = katz_deli(0)
     puts "Currently serving #{first}."
     katz_deli.shift
   end
-
-
-
 end
